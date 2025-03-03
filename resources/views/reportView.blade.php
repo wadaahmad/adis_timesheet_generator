@@ -8,6 +8,11 @@
                 display: none !important;
             }
         }
+
+        @page {
+            size: 230mm <?= $paper_height ?>mm;
+            /* <- You can change these dimensions */
+        }
     </style>
 </head>
 

@@ -61,6 +61,7 @@ class Report extends Controller
     }
     return [
       'vendor' => 'Tami Zagita',
+      'paper_height' => round(sizeof($excel) * 6.8),
       'leaders' => $request->leaders,
       'end_date' => $reportDate->format('t'),
       'present' => $reportDate->format('t') - $dayOff,
