@@ -51,7 +51,7 @@ class Report extends Controller
       }
       if ($isFound == false) {
         $result[$date->format('Y-m-d')][] = [
-          'is_day_off' => $isDayOff,
+          'is_day_off' => true,
           'day_idn' => self::dayIdn[$date->format('N')]
         ];
       }
@@ -61,7 +61,7 @@ class Report extends Controller
     }
     return [
       'vendor' => 'Tami Zagita',
-      'paper_height' => round(sizeof($excel) * 6.8),
+      'paper_height' => round(sizeof($excel) * 7.8),
       'leaders' => $request->leaders,
       'end_date' => $reportDate->format('t'),
       'present' => $reportDate->format('t') - $dayOff,
