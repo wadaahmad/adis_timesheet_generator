@@ -41,6 +41,12 @@
                         Mohamad Tebijuniardi
                     </label>
                 </div>
+                <div class="form-check">
+                    <input name="leaders[]" class="form-check-input" type="checkbox" value="Nurarifin" id="lead3" checked>
+                    <label class="form-check-label" for="lead3">
+                        Nurarifin
+                    </label>
+                </div>
             </div>
             <div class="mb-3">
                 <button class="btn btn-primary">Generate</button>
